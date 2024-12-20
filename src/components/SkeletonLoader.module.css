@@ -1,0 +1,45 @@
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .skeleton {
+    background-color: #e0e0e0;
+    width: 80%;
+    height: 20px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    animation: skeleton-loading 1.5s infinite ease-in-out;
+  }
+  
+  .skeleton:nth-child(1) {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  
+  .skeleton:nth-child(2) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .skeleton:nth-child(3) {
+    width: 70%;
+  }
+  
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-position: -200%;
+    }
+    50% {
+      background-position: 200%;
+    }
+    100% {
+      background-position: -200%;
+    }
+  }
+  

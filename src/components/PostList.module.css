@@ -1,0 +1,106 @@
+.postList {
+  padding: 20px;
+  width: 80%;
+  margin: 50px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.postList h1 {
+  font-size: 2.8em;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.postList ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.postCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 280px; 
+}
+
+.postCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.postLink {
+  text-decoration: none;
+  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+}
+
+.postLink h2 {
+  font-size: 1.8em;
+  margin: 0;
+  font-weight: 600;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+.postLink h2:hover {
+  color: #1abc9c;
+}
+
+.postLink p {
+  color: #7f8c8d;
+  font-size: 1.1em;
+  margin-top: 10px;
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Ensure text is truncated */
+}
+
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pagination button {
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
